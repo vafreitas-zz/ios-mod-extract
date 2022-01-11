@@ -16,7 +16,7 @@
   },
   "static_framework": true,
   "platforms": {
-    "ios": "13.0"
+    "ios": "15.0"
   },
   "swift_versions": "5.0",
   "source_files": "TQIExtract/Classes/**/*.{h,m,swift}",

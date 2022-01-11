@@ -9,9 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExtractExampleViewController" customModule="DIOExtract_Example" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExtractExampleViewController" customModule="TQIExtract_Example" customModuleProvider="target">
             <connections>
-                <outlet property="openExtractButton" destination="jfx-0n-Yuo" id="YnJ-3e-geK"/>
+                <outlet property="switfuiSwitch" destination="Lff-OJ-nv2" id="qbt-GI-JeU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIOExtract Module" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vV-DZ-re4">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TQIBank Extrato" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vV-DZ-re4">
                     <rect key="frame" x="70" y="84" width="274" height="76.5"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="76.670000000000002" id="jdx-hD-xfy"/>
@@ -38,21 +38,49 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfx-0n-Yuo">
-                    <rect key="frame" x="77" y="426.5" width="260" height="43"/>
-                    <color key="backgroundColor" systemColor="linkColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="43" id="IhF-5i-6km"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Abrir Extrato" cornerStyle="medium">
-                        <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="openExtract:" destination="-1" eventType="touchUpInside" id="Lwa-hb-oJl"/>
-                    </connections>
-                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="FPN-gj-dWj">
+                    <rect key="frame" x="60" y="392.5" width="294" height="111"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="2Ui-Ad-Dbd">
+                            <rect key="frame" x="0.0" y="0.0" width="294" height="31"/>
+                            <subviews>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lff-OJ-nv2">
+                                    <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SwiftUI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyT-07-0wm">
+                                    <rect key="frame" x="67" y="0.0" width="227" height="31"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="8xe-8S-EDI"/>
+                            </constraints>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0z-WR-BHR">
+                            <rect key="frame" x="0.0" y="61" width="294" height="50"/>
+                            <color key="backgroundColor" systemColor="linkColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="6rY-iO-F1g"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Abrir Extrato" cornerStyle="medium">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="openExtract:" destination="-1" eventType="touchUpInside" id="Bfc-PT-eXd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -62,13 +90,13 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Fgt-zi-qih" secondAttribute="bottom" constant="20" id="Gdb-dx-h9T"/>
                 <constraint firstItem="Fgt-zi-qih" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="77" id="Mhu-st-b2f"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9vV-DZ-re4" secondAttribute="trailing" constant="70" id="PFE-cd-LlR"/>
+                <constraint firstItem="FPN-gj-dWj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="SlU-Eo-5gp"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Fgt-zi-qih" secondAttribute="trailing" constant="77" id="Tog-bf-38l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FPN-gj-dWj" secondAttribute="trailing" constant="60" id="XSG-j0-PRK"/>
+                <constraint firstItem="FPN-gj-dWj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="YDZ-av-waE"/>
                 <constraint firstItem="9vV-DZ-re4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aj4-H6-eOA"/>
-                <constraint firstItem="jfx-0n-Yuo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="av0-sp-nDg"/>
-                <constraint firstItem="jfx-0n-Yuo" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gLB-aa-cEx"/>
                 <constraint firstItem="9vV-DZ-re4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="70" id="iLH-dd-dEA"/>
-                <constraint firstItem="jfx-0n-Yuo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="77" id="n9x-Wt-kBw"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jfx-0n-Yuo" secondAttribute="trailing" constant="77" id="tHb-Nh-8Or"/>
+                <constraint firstItem="FPN-gj-dWj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nf0-ae-cX2"/>
             </constraints>
             <point key="canvasLocation" x="132" y="46"/>
         </view>

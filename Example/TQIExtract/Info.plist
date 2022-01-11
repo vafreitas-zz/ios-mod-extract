@@ -34,7 +34,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 	</array>
 	<key>Base_URL</key>
-	<string>private-1c4f09-diobankapi.apiary-mock.com</string>
+	<string>private-1c4f09-tqibankapi.apiary-mock.com</string>
 	<key>Protocol</key>
 	<string>https</string>
 	<key>Environment</key>

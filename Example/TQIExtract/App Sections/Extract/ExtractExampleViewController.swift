@@ -8,23 +8,19 @@
 
 import UIKit
 import TQIExtract
+import SwiftUI
 
 class ExtractExampleViewController: UIViewController {
 
     // MARK: Outlets
     
-    @IBOutlet weak var openExtractButton: UIButton!
+    @IBOutlet weak var switfuiSwitch: UISwitch!
     
     // MARK: Properties
     
     let extractController = ExtractViewController()
-    
-    // MARK: Lifecycle
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-  
-    }
+    let extractSwiftUIView = ExtractSwiftUIView()
+    lazy var extractSwiftUIController = UIHostingController(rootView: extractSwiftUIView)
     
     // MARK: Actions
     
@@ -33,6 +29,12 @@ class ExtractExampleViewController: UIViewController {
             return
         }
         
-        navigation.pushViewController(extractController, animated: true)
+        if switfuiSwitch.isOn {
+            extractSwiftUIController.navigationController?.isNavigationBarHidden = true
+            navigation.pushViewController(extractSwiftUIController, animated: true)
+            
+        } else {
+            navigation.pushViewController(extractController, animated: true)
+        }
     }
 }
