@@ -97,10 +97,12 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/../../TQIExtract/Assets/TQIExtractAssets.xcassets"
   install_resource "${BUILT_PRODUCTS_DIR}/TQIExtract/TQIExtract.framework/ExtractTransactionCell.nib"
   install_resource "${BUILT_PRODUCTS_DIR}/TQIExtract/TQIExtract.framework/ExtractViewController.nib"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_ROOT}/../../TQIExtract/Assets/TQIExtractAssets.xcassets"
   install_resource "${BUILT_PRODUCTS_DIR}/TQIExtract/TQIExtract.framework/ExtractTransactionCell.nib"
   install_resource "${BUILT_PRODUCTS_DIR}/TQIExtract/TQIExtract.framework/ExtractViewController.nib"
 fi

@@ -14,7 +14,7 @@ struct ExtractTransactionRow: View {
     
     var body: some View {
         HStack {
-            Image(systemName: "arrow.turn.up.forward.iphone")
+            Image(uiImage: .init(named: "recharge-icon") ?? UIImage())
                 .resizable()
                 .frame(width: 40, height: 30)
                 .scaledToFill()

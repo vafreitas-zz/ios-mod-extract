@@ -14,14 +14,15 @@
     "git": "https://github.com/vafreitas/ios-mod-extract.git",
     "tag": "1.0.0"
   },
-  "static_framework": true,
   "platforms": {
     "ios": "15.0"
   },
   "swift_versions": "5.0",
-  "source_files": "TQIExtract/Classes/**/*.{h,m,swift,xib}",
+  "static_framework": true,
+  "source_files": "TQIExtract/Classes/**/*.{swift}",
   "resources": [
-    "TQIExtract/Assets/*.xcassets"
+    "TQIExtract/Assets/*.xcassets",
+    "TQIExtract/Classes/**/*.{xib}"
   ],
   "public_header_files": "Pod/Classes/**/*.swift",
   "info_plist": {
