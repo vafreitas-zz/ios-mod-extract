@@ -1,0 +1,6 @@
+framework module TQIExtract {
+  umbrella header "TQIExtract-umbrella.h"
+
+  export *
+  module * { export * }
+}

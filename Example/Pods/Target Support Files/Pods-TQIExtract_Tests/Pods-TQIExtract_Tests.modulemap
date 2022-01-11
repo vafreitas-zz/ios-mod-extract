@@ -1,0 +1,6 @@
+framework module Pods_TQIExtract_Tests {
+  umbrella header "Pods-TQIExtract_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

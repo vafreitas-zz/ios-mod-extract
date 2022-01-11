@@ -24,8 +24,6 @@
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -35,5 +33,11 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 	</array>
+	<key>Base_URL</key>
+	<string>private-1c4f09-diobankapi.apiary-mock.com</string>
+	<key>Protocol</key>
+	<string>https</string>
+	<key>Environment</key>
+	<string>sandbox</string>
 </dict>
 </plist>

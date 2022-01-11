@@ -1,0 +1,23 @@
+PODS:
+  - TQIExtract (1.0.0):
+    - VFNetwork
+  - VFNetwork (1.4.1)
+
+DEPENDENCIES:
+  - TQIExtract (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - VFNetwork
+
+EXTERNAL SOURCES:
+  TQIExtract:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TQIExtract: 1a4652226b0045295850ffdcc54f8c92fc88ccb2
+  VFNetwork: 2070046bcd8b7e766affc3d1a4cd7729c3b38880
+
+PODFILE CHECKSUM: b263dea017ab465e7311afff6896f573f12ca360
+
+COCOAPODS: 1.11.2
