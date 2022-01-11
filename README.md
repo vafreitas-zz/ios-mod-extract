@@ -1,9 +1,9 @@
+
 # TQIExtract
 
-[![CI Status](https://img.shields.io/travis/tqi-valves/TQIExtract.svg?style=flat)](https://travis-ci.org/tqi-valves/TQIExtract)
-[![Version](https://img.shields.io/cocoapods/v/TQIExtract.svg?style=flat)](https://cocoapods.org/pods/TQIExtract)
-[![License](https://img.shields.io/cocoapods/l/TQIExtract.svg?style=flat)](https://cocoapods.org/pods/TQIExtract)
-[![Platform](https://img.shields.io/cocoapods/p/TQIExtract.svg?style=flat)](https://cocoapods.org/pods/TQIExtract)
+[![CI Status](https://img.shields.io/travis/tqi-valves/DIOExtract.svg?style=flat)](https://travis-ci.org/tqi-valves/DIOExtract)
+[![Version](https://img.shields.io/badge/pod-v1.0.0-blue)](https://github.com/vafreitas/ios-mod-extract)
+[![Platform](https://img.shields.io/badge/platform-ios-lightgrey)](https://github.com/vafreitas/ios-mod-extract)
 
 ## Example
 
@@ -11,18 +11,20 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+- Xcode 13
+- Swift 5
+
 ## Installation
 
-TQIExtract is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'TQIExtract'
+pod 'TQIExtract', :git => 'https://github.com/vafreitas/ios-mod-extract.git'
 ```
 
 ## Author
 
-tqi-valves, tqi_valves@uolinc.com
+vafreitas, vitoralves59@gmail.com
 
 ## License
 
