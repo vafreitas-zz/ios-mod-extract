@@ -19,10 +19,9 @@
     "ios": "15.0"
   },
   "swift_versions": "5.0",
-  "source_files": "TQIExtract/Classes/**/*.{h,m,swift}",
+  "source_files": "TQIExtract/Classes/**/*.{h,m,swift,xib}",
   "resources": [
-    "TQIExtract/Assets/*.xcassets",
-    "TQIExtract/Classes/**/*.{xib}"
+    "TQIExtract/Assets/*.xcassets"
   ],
   "public_header_files": "Pod/Classes/**/*.swift",
   "info_plist": {

@@ -214,7 +214,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				C39B55B66AD9FFE13705B62F /* [CP] Embed Pods Frameworks */,
-				14878276C135295CBBF114D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,26 +305,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14878276C135295CBBF114D9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TQIExtract_Example/Pods-TQIExtract_Example-resources.sh",
-				"${BUILT_PRODUCTS_DIR}/TQIExtract/TQIExtract.framework/ExtractTransactionCell.nib",
-				"${BUILT_PRODUCTS_DIR}/TQIExtract/TQIExtract.framework/ExtractViewController.nib",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExtractTransactionCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExtractViewController.nib",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TQIExtract_Example/Pods-TQIExtract_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6AD040537A298653A4721A83 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

@@ -21,11 +21,8 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.ios.deployment_target = '15.0'
   
-  s.source_files = 'TQIExtract/Classes/**/*.{h,m,swift}'
-  s.resources = [
-  'TQIExtract/Assets/*.xcassets',
-  'TQIExtract/Classes/**/*.{xib}'
-  ]
+  s.source_files = 'TQIExtract/Classes/**/*.{h,m,swift,xib}'
+  s.resources = ['TQIExtract/Assets/*.xcassets']
    
   s.public_header_files = 'Pod/Classes/**/*.swift'
   
