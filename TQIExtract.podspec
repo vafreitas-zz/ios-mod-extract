@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   
   s.source_files = 'TQIExtract/Classes/**/*.{h,m,swift}'
   s.resources = [
-  'PBScheduling/Assets/*.xcassets',
+  'TQIExtract/Assets/*.xcassets',
   'TQIExtract/Classes/**/*.{xib}'
   ]
    
