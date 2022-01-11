@@ -29,6 +29,21 @@ class ExtractTransactionCell: UITableViewCell {
             valueLabel.textColor = .systemGreen
             setValue(model.value)
         }
+        
+        var iconName: String  {
+            switch model.type {
+            case .payment:
+                return "payment-icon"
+            case .pixSent:
+                return "pix-sent-icon"
+            case .recharge:
+                return "recharge-icon"
+            case .tedReceive:
+                return "ted-receive-icon"
+            }
+        }
+        
+        iconImageView.image = UIImage(named: iconName)
     }
     
     func setValue(_ value: String) {

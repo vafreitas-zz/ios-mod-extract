@@ -53,6 +53,7 @@
 		D200B7E9293ADD46DDA7FDA125FFFB75 /* ExtractTransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F581F36B6B878FBA0970714EE1F596 /* ExtractTransactionCell.xib */; };
 		D4198B2CCB1B215B05A4B0779DF8B6CF /* TQIExtract-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E395E8BC7F58CB9BBA3482220D446326 /* TQIExtract-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6F242C7EF2A10F5B2C6607AA75D5D49 /* VFNetwork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AB7FEFF39D8964A9397ECE618EC6CC2 /* VFNetwork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD240E09278E4F870054035A /* ExtractTransactionSwiftUICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD240E08278E4F870054035A /* ExtractTransactionSwiftUICell.swift */; };
 		EAB863452568F737FCFFEDDFB7D5B3BD /* ExtractService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3D257C6FF63D0272DA06085BD5D909 /* ExtractService.swift */; };
 		F64EEA73D541D631FEEAFC6D5CF80EEB /* Pods-TQIExtract_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5920FB9F810100328AC8611C9A2FA1CA /* Pods-TQIExtract_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F99B31984F36CA71F2308C16816BCA24 /* RequestBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DA40962013041B4FCE36E81A389F7 /* RequestBuilderProtocol.swift */; };
@@ -103,7 +104,7 @@
 		10F87A198227D4A9E3257CFF2EF9BFDB /* ExtractAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExtractAPI.swift; sourceTree = "<group>"; };
 		12B78A2247F5D4F16D588257534F75C3 /* APIBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIBuilder.swift; path = Sources/VFNetwork/API/APIBuilder.swift; sourceTree = "<group>"; };
 		134A9B3F38AD4886394B9FFCBEF14FC4 /* Pods-TQIExtract_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TQIExtract_Example"; path = Pods_TQIExtract_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		148313366CBE54F5047336A3FF9D5E41 /* TQIExtract.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TQIExtract.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		148313366CBE54F5047336A3FF9D5E41 /* TQIExtract.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TQIExtract.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		19A0BB9F7F1122C701C657CC81715AC5 /* ExtractViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExtractViewController.swift; sourceTree = "<group>"; };
 		19AE27A6322869F038C2287FF729D4F9 /* ExtractModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExtractModel.swift; sourceTree = "<group>"; };
 		1A5B6909BC0F445D3727AFE6E2D89FB4 /* TQIExtractAssets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = TQIExtractAssets.xcassets; sourceTree = "<group>"; };
@@ -118,7 +119,7 @@
 		3F3A06B22BBA5AED33D54EE4CE705549 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Sources/VFNetwork/HTTP/HTTPMethod.swift; sourceTree = "<group>"; };
 		42201DF7EA787A1DAA7B9DBF84474CE0 /* VFNetwork-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VFNetwork-Info.plist"; sourceTree = "<group>"; };
 		463DBE28DEB422BFB680C93CD968FEEC /* TQIExtract.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TQIExtract.modulemap; sourceTree = "<group>"; };
-		473EAE6FCFD982B19AC2FC1DF5ABFE6B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		473EAE6FCFD982B19AC2FC1DF5ABFE6B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		47BAB4DFBA1FAA63EEDDD10144145020 /* RequestHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestHeader.swift; path = Sources/VFNetwork/Service/RequestHeader.swift; sourceTree = "<group>"; };
 		4969654BDDEBB72225FDFCD7C815CBEA /* VFNetwork */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VFNetwork; path = VFNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D33F1F27F55FB5ED7DEFC9E9D1A1A47 /* VFNetwork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VFNetwork-dummy.m"; sourceTree = "<group>"; };
@@ -146,7 +147,7 @@
 		8EF2C625C86A56CA4EBA515651A08D10 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		8F068CCBBB34A3B5BF8C987E01D844A9 /* Pods-TQIExtract_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TQIExtract_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9526BA16BE32965D4C092539DCDFD1E4 /* TQIExtract-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TQIExtract-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D96DC1CAB8416859FCE495459FD2819 /* URLPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLPath.swift; path = Sources/VFNetwork/HTTP/URLPath.swift; sourceTree = "<group>"; };
 		A52CA64582A888D420D3C0536C99AA34 /* ExtractViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ExtractViewController.xib; sourceTree = "<group>"; };
 		AB4BF55E195A6AAF65DA81C30584121E /* Disk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disk.swift; path = Sources/VFNetwork/Cache/Disk.swift; sourceTree = "<group>"; };
@@ -158,8 +159,9 @@
 		CBC161B063AB11CFB366735DEDB5D2FC /* CacheKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheKey.swift; path = Sources/VFNetwork/Cache/Enum/CacheKey.swift; sourceTree = "<group>"; };
 		CC5F1C21AB002A3473DDD70F49111BDF /* ExtractSwiftUIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExtractSwiftUIView.swift; sourceTree = "<group>"; };
 		D1193DC8405F3331789AB280FADB7987 /* RequestOrchestrator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestOrchestrator.swift; path = Sources/VFNetwork/Service/RequestOrchestrator.swift; sourceTree = "<group>"; };
-		D593F42BEAA4EF82380F6D27DC3F8774 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D593F42BEAA4EF82380F6D27DC3F8774 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DC158625568F5C9FEAD7A244374ABC2D /* RequestOrchestratorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestOrchestratorProtocol.swift; path = Sources/VFNetwork/Service/Protocols/RequestOrchestratorProtocol.swift; sourceTree = "<group>"; };
+		DD240E08278E4F870054035A /* ExtractTransactionSwiftUICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractTransactionSwiftUICell.swift; sourceTree = "<group>"; };
 		DE9A4ACA79D534930012F9B7879037AC /* Pods-TQIExtract_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TQIExtract_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E395E8BC7F58CB9BBA3482220D446326 /* TQIExtract-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TQIExtract-umbrella.h"; sourceTree = "<group>"; };
 		E5558B419050EF1E1EF0D16FF4166B89 /* VFNetwork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VFNetwork-prefix.pch"; sourceTree = "<group>"; };
@@ -227,7 +229,6 @@
 				7366931359AC37DEDF6A86C18419BF16 /* UITableView+Extension.swift */,
 				8EF2C625C86A56CA4EBA515651A08D10 /* UIView+Extension.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -247,7 +248,6 @@
 				10F87A198227D4A9E3257CFF2EF9BFDB /* ExtractAPI.swift */,
 				FC3D257C6FF63D0272DA06085BD5D909 /* ExtractService.swift */,
 			);
-			name = Service;
 			path = Service;
 			sourceTree = "<group>";
 		};
@@ -277,7 +277,6 @@
 			children = (
 				19AE27A6322869F038C2287FF729D4F9 /* ExtractModel.swift */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -287,7 +286,6 @@
 				2AC23B5A5E9D23D7F8A67FB4603E9BF8 /* ExtractSwiftUIViewModel.swift */,
 				7D64265D64A86DB884F5D943FEE9F331 /* ExtractViewModel.swift */,
 			);
-			name = ViewModel;
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
@@ -312,7 +310,6 @@
 			children = (
 				81FE29DF0350F618112217657D2A85BB /* LoadingView.swift */,
 			);
-			name = Views;
 			path = Views;
 			sourceTree = "<group>";
 		};
@@ -339,7 +336,6 @@
 			children = (
 				05F581F36B6B878FBA0970714EE1F596 /* ExtractTransactionCell.xib */,
 			);
-			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
@@ -378,7 +374,6 @@
 			children = (
 				D1FD9B02539A23378571151956FFE220 /* View */,
 			);
-			name = Extract;
 			path = Extract;
 			sourceTree = "<group>";
 		};
@@ -416,7 +411,6 @@
 				19A0BB9F7F1122C701C657CC81715AC5 /* ExtractViewController.swift */,
 				C765C3B0389C42C7E2E52EA16EEA5E64 /* Cell */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -424,8 +418,8 @@
 			isa = PBXGroup;
 			children = (
 				0DE0EFD272FE00D763C5D60781327D75 /* ExtractTransactionCell.swift */,
+				DD240E08278E4F870054035A /* ExtractTransactionSwiftUICell.swift */,
 			);
-			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
@@ -456,7 +450,6 @@
 				A52CA64582A888D420D3C0536C99AA34 /* ExtractViewController.xib */,
 				6CDF4853972FE35A4C523B494F5C7D5D /* Cell */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -524,7 +517,6 @@
 				E5925D5D8747F3011BBB669A69552F7D /* VCodable.swift */,
 				786C37FBFC3472C8E7C5DB6EDA2355A2 /* Support Files */,
 			);
-			name = VFNetwork;
 			path = VFNetwork;
 			sourceTree = "<group>";
 		};
@@ -725,6 +717,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD240E09278E4F870054035A /* ExtractTransactionSwiftUICell.swift in Sources */,
 				C92CB1815F24D45AA5CE6CF337C3C099 /* ExtractAPI.swift in Sources */,
 				6FC607F9596428513422955B57D2D2F1 /* ExtractCoordinator.swift in Sources */,
 				687E305F199ED798D653E2ED7AE72EF1 /* ExtractModel.swift in Sources */,
@@ -1076,8 +1069,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

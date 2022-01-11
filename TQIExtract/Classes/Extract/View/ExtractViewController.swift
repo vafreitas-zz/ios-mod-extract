@@ -81,7 +81,7 @@ extension ExtractViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        75.0
+        80.0
     }
 }
 

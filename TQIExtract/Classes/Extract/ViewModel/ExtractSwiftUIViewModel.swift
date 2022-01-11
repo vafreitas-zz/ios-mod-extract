@@ -9,9 +9,14 @@ import SwiftUI
 
 final class ExtractSwiftUIViewModel: ObservableObject {
     
+    // MARK: Properties
+    
     @Published var model: ExtractTransactions = .init()
     @Published var isLoading = false
+    
     var service = ExtractService()
+    
+    // MARK: API Methods
     
     func getTransactions() {
         isLoading = true
