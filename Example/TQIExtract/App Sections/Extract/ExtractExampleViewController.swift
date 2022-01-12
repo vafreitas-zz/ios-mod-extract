@@ -18,8 +18,8 @@ class ExtractExampleViewController: UIViewController {
     
     // MARK: Properties
     
-    let extractController = ExtractViewController()
-    let extractSwiftUIView = ExtractSwiftUIView()
+    let extractListController = ExtractListViewController()
+    let extractSwiftUIView = ExtractListSwiftUIView()
     lazy var extractSwiftUIController = UIHostingController(rootView: extractSwiftUIView)
     
     // MARK: Actions
@@ -34,7 +34,7 @@ class ExtractExampleViewController: UIViewController {
             navigation.pushViewController(extractSwiftUIController, animated: true)
             
         } else {
-            navigation.pushViewController(extractController, animated: true)
+            navigation.pushViewController(extractListController, animated: true)
         }
     }
 }

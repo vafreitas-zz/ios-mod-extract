@@ -7,7 +7,7 @@
 
 import Foundation
 
-open class ExtractViewModel {
+open class ExtractListViewModel {
     
     // MARK: Properties
     

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-open class ExtractSwiftUIViewModel: ObservableObject {
+open class ExtractListSwiftUIViewModel: ObservableObject {
     
     // MARK: Properties
     

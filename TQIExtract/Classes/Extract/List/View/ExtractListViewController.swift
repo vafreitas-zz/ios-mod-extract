@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class ExtractViewController: UIViewController {
+open class ExtractListViewController: UIViewController {
 
     // MARK: Outlet
     
@@ -15,7 +15,7 @@ open class ExtractViewController: UIViewController {
     
     // MARK: Properties
     
-    var viewModel: ExtractViewModel
+    var viewModel: ExtractListViewModel
     let refreshControl = UIRefreshControl()
     
     // MARK: Initializer
@@ -25,7 +25,7 @@ open class ExtractViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    init(viewModel: ExtractViewModel = .init()) {
+    init(viewModel: ExtractListViewModel = .init()) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -67,7 +67,7 @@ open class ExtractViewController: UIViewController {
 
 // MARK: UITableView Delegate
 
-extension ExtractViewController: UITableViewDelegate, UITableViewDataSource {
+extension ExtractListViewController: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.model.transactions.count
     }

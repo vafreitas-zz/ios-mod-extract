@@ -5,7 +5,7 @@ import TQIExtract
 
 class ExtractViewModelTests: XCTestCase {
     
-    var viewModel: ExtractViewModel! = .init()
+    var viewModel: ExtractListViewModel! = .init()
     var mock: JSONMockOrchestrator!
     
     override func setUp() {

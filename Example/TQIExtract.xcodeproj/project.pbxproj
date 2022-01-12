@@ -15,7 +15,6 @@
 		DD240E0C278E5D970054035A /* getTransactionsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = DD240E0B278E5D970054035A /* getTransactionsSuccess.json */; };
 		DD9B79EF278E0A0100B83CD5 /* ExtractExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD9B79E9278E0A0100B83CD5 /* ExtractExampleViewController.xib */; };
 		DD9B79F0278E0A0100B83CD5 /* ExtractExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B79EA278E0A0100B83CD5 /* ExtractExampleViewController.swift */; };
-		DD9B79F1278E0A0100B83CD5 /* ExtractExampleSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B79EC278E0A0100B83CD5 /* ExtractExampleSwiftUIView.swift */; };
 		DD9B79F2278E0A0100B83CD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B79EE278E0A0100B83CD5 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +47,6 @@
 		DD240E0B278E5D970054035A /* getTransactionsSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getTransactionsSuccess.json; sourceTree = "<group>"; };
 		DD9B79E9278E0A0100B83CD5 /* ExtractExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtractExampleViewController.xib; sourceTree = "<group>"; };
 		DD9B79EA278E0A0100B83CD5 /* ExtractExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractExampleViewController.swift; sourceTree = "<group>"; };
-		DD9B79EC278E0A0100B83CD5 /* ExtractExampleSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractExampleSwiftUIView.swift; sourceTree = "<group>"; };
 		DD9B79EE278E0A0100B83CD5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E87D20BD9CFB79CA1221F175 /* Pods-TQIExtract_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TQIExtract_Example.debug.xcconfig"; path = "Target Support Files/Pods-TQIExtract_Example/Pods-TQIExtract_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,17 +172,8 @@
 			children = (
 				DD9B79E9278E0A0100B83CD5 /* ExtractExampleViewController.xib */,
 				DD9B79EA278E0A0100B83CD5 /* ExtractExampleViewController.swift */,
-				DD9B79EB278E0A0100B83CD5 /* SwiftUI */,
 			);
 			path = Extract;
-			sourceTree = "<group>";
-		};
-		DD9B79EB278E0A0100B83CD5 /* SwiftUI */ = {
-			isa = PBXGroup;
-			children = (
-				DD9B79EC278E0A0100B83CD5 /* ExtractExampleSwiftUIView.swift */,
-			);
-			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		DD9B79ED278E0A0100B83CD5 /* Delegate */ = {
@@ -401,7 +390,6 @@
 			files = (
 				DD9B79F2278E0A0100B83CD5 /* AppDelegate.swift in Sources */,
 				DD9B79F0278E0A0100B83CD5 /* ExtractExampleViewController.swift in Sources */,
-				DD9B79F1278E0A0100B83CD5 /* ExtractExampleSwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

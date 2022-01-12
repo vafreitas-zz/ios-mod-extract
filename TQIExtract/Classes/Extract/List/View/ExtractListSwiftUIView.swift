@@ -8,11 +8,11 @@
 import SwiftUI
 import Foundation
 
-public struct ExtractSwiftUIView: View {
+public struct ExtractListSwiftUIView: View {
     
     // MARK: Properties
     
-    @StateObject private var viewModel = ExtractSwiftUIViewModel()
+    @StateObject private var viewModel = ExtractListSwiftUIViewModel()
     
     // MARK: Initializer
     
