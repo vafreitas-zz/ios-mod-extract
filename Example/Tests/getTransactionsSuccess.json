@@ -1,0 +1,40 @@
+{
+                "transactions": [
+                    {
+                        "id": "fyug4ldCHFmRHdBxzX14",
+                        "movementDescription": "Pagamento de conta",
+                        "value": "R$ 140",
+                        "movement": "OUT",
+                        "type": "PAYMENT_BILL",
+                        "dateTime": "12.01.2022 às 12:13"
+                    }, {
+                        "id": "8jLtd5SQa7mATTT7fKcV",
+                        "movementDescription": "Transferência Pix",
+                        "value": "R$ 2600,50",
+                        "movement": "OUT",
+                        "type": "PIX_SENT",
+                        "dateTime": "18.11.2021 às 17:30"
+                    }, {
+                        "id": "4jwtS9abdsrk6rDfr8vX",
+                        "movementDescription": "Recarga",
+                        "value": "R$ 35",
+                        "movement": "OUT",
+                        "type": "RECHARGE",
+                        "dateTime": "23.10.2021 às 12:40"
+                    }, {
+                        "id": "CyugllYJQLmRHdBmzB3Y",
+                        "movementDescription": "Pagamento de conta",
+                        "value": "R$ 200",
+                        "movement": "OUT",
+                        "type": "PAYMENT_BILL",
+                        "dateTime": "15.10.2021 às 14:23"
+                    }, {
+                        "id": "8tvmOMaRELobPutRpJfr",
+                        "movementDescription": "Transferência TED",
+                        "value": "R$ 250,90",
+                        "movement": "IN",
+                        "type": "TED_RECEIVE",
+                        "dateTime": "05.09.2021 às 13:21"
+                    }
+                ]
+        }

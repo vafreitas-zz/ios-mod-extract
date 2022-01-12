@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* ExtractViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* ExtractViewModelTests.swift */; };
 		635013FE7CC1715A21D37BBC /* Pods_TQIExtract_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE083F5696CD80543CC6D444 /* Pods_TQIExtract_Tests.framework */; };
 		68361794C90548A0543644F4 /* Pods_TQIExtract_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBDC1690A80B004A47F9FB7 /* Pods_TQIExtract_Example.framework */; };
+		DD240E0C278E5D970054035A /* getTransactionsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = DD240E0B278E5D970054035A /* getTransactionsSuccess.json */; };
 		DD9B79EF278E0A0100B83CD5 /* ExtractExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD9B79E9278E0A0100B83CD5 /* ExtractExampleViewController.xib */; };
 		DD9B79F0278E0A0100B83CD5 /* ExtractExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B79EA278E0A0100B83CD5 /* ExtractExampleViewController.swift */; };
 		DD9B79F1278E0A0100B83CD5 /* ExtractExampleSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B79EC278E0A0100B83CD5 /* ExtractExampleSwiftUIView.swift */; };
@@ -38,12 +39,13 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* TQIExtract_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TQIExtract_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* ExtractViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractViewModelTests.swift; sourceTree = "<group>"; };
 		A1D4DCC03B8AA529F039846C /* Pods-TQIExtract_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TQIExtract_Example.release.xcconfig"; path = "Target Support Files/Pods-TQIExtract_Example/Pods-TQIExtract_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AE083F5696CD80543CC6D444 /* Pods_TQIExtract_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TQIExtract_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE884FD63D09828C53CC6D79 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D37BE8B46E87DB1660F57BE8 /* Pods-TQIExtract_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TQIExtract_Tests.release.xcconfig"; path = "Target Support Files/Pods-TQIExtract_Tests/Pods-TQIExtract_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D9B623A46BE951F40AC1FCC2 /* Pods-TQIExtract_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TQIExtract_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TQIExtract_Tests/Pods-TQIExtract_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD240E0B278E5D970054035A /* getTransactionsSuccess.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getTransactionsSuccess.json; sourceTree = "<group>"; };
 		DD9B79E9278E0A0100B83CD5 /* ExtractExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtractExampleViewController.xib; sourceTree = "<group>"; };
 		DD9B79EA278E0A0100B83CD5 /* ExtractExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractExampleViewController.swift; sourceTree = "<group>"; };
 		DD9B79EC278E0A0100B83CD5 /* ExtractExampleSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractExampleSwiftUIView.swift; sourceTree = "<group>"; };
@@ -115,7 +117,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				DD240E0A278E5D820054035A /* Responses */,
+				607FACEB1AFB9204008FA782 /* ExtractViewModelTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -148,6 +151,14 @@
 				D37BE8B46E87DB1660F57BE8 /* Pods-TQIExtract_Tests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD240E0A278E5D820054035A /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				DD240E0B278E5D970054035A /* getTransactionsSuccess.json */,
+			);
+			name = Responses;
 			sourceTree = "<group>";
 		};
 		DD9B79E7278E0A0100B83CD5 /* App Sections */ = {
@@ -291,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				DD240E0C278E5D970054035A /* getTransactionsSuccess.json in Resources */,
 				DD9B79EF278E0A0100B83CD5 /* ExtractExampleViewController.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -397,7 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* ExtractViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

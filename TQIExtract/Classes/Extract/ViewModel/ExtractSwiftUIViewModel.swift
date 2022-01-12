@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-final class ExtractSwiftUIViewModel: ObservableObject {
+open class ExtractSwiftUIViewModel: ObservableObject {
     
     // MARK: Properties
     
     @Published var model: ExtractTransactions = .init()
     @Published var isLoading = false
     
-    var service = ExtractService()
+    public var service = ExtractService()
     
     // MARK: API Methods
     
-    func getTransactions() {
+    public func getTransactions() {
         isLoading = true
         service.getTransactions { [weak self] result in
             DispatchQueue.main.async {

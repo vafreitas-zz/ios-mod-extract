@@ -7,21 +7,21 @@
 
 import Foundation
 
-class ExtractViewModel {
+open class ExtractViewModel {
     
     // MARK: Properties
     
     var model: ExtractTransactions
-    let service: ExtractService
+    public let service: ExtractService
     
     // MARK: Initializer
     
-    init(model: ExtractTransactions = .init(), service: ExtractService = .init()) {
+    public init(model: ExtractTransactions = .init(), service: ExtractService = .init()) {
         self.model = model
         self.service = service
     }
     
-    func getTransactions(completion: @escaping (Result<ExtractTransactions, Error>) -> Void) {
+    public func getTransactions(completion: @escaping (Result<ExtractTransactions, Error>) -> Void) {
         service.getTransactions { result in
             switch result {
             case let .success(model):

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='TQIExtract_Tests.xctest' tests='2' failures='0'>
+  <testsuite name='TQIExtract_Tests.ExtractViewModelTests' tests='2' failures='0'>
+    <testcase classname='TQIExtract_Tests.ExtractViewModelTests' name='testGetTransactionsWithError' time='0.014'/>
+    <testcase classname='TQIExtract_Tests.ExtractViewModelTests' name='testGetTransactionsWithSuccess' time='0.006'/>
+  </testsuite>
+</testsuites>

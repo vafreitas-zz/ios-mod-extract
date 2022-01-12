@@ -1,0 +1,31 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Build app and run unit tests"
+  lane :test_module do
+     setup_ci if ENV['CI']
+	  scan(
+      workspace: "Example/TQIExtract.xcworkspace",
+      scheme: "TQIExtract-Example",
+      configuration: "Debug",
+      device: "iPhone 13 Pro Max",
+      clean: true,
+      xcargs: "CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO"
+    )
+  end
+end

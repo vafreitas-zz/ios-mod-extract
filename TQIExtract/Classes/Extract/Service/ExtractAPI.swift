@@ -7,27 +7,27 @@
 
 import VFNetwork
 
-enum ExtractAPI {
+public enum ExtractAPI {
     case transactions
 }
 
 extension ExtractAPI: APIBuilder {
-    var path: URLPath {
+    public var path: URLPath {
         switch self {
         case .transactions:
             return .plain("statement")
         }
     }
     
-    var httpMethod: HTTPMethods {
+    public var httpMethod: HTTPMethods {
         .get
     }
     
-    var headers: HTTPHeader {
+    public var headers: HTTPHeader {
         .empty
     }
     
-    var task: HTTPTask {
+    public var task: HTTPTask {
         .request
     }
 }

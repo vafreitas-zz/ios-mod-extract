@@ -7,7 +7,7 @@
 
 import VFNetwork
 
-class ExtractService: RequestService<ExtractAPI> {
+open class ExtractService: RequestService<ExtractAPI> {
     func getTransactions(completion: @escaping (Result<ExtractTransactions, Error>) -> Void) {
         execute(.transactions, responseType: ExtractTransactions.self, completion: completion)
     }
