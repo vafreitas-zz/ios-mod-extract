@@ -1,7 +1,7 @@
 
 # TQIExtract
 
-[![CI Status](https://img.shields.io/travis/tqi-valves/DIOExtract.svg?style=flat)](https://travis-ci.org/tqi-valves/DIOExtract)
+[![Build](https://github.com/vafreitas/ios-mod-extract/actions/workflows/swift.yml/badge.svg)](https://github.com/vafreitas/ios-mod-extract/actions/workflows/swift.yml)
 [![Version](https://img.shields.io/badge/pod-v1.0.0-blue)](https://github.com/vafreitas/ios-mod-extract)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey)](https://github.com/vafreitas/ios-mod-extract)
 

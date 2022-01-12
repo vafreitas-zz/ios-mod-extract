@@ -1,6 +1,0 @@
-framework module Pods_TQIExtract_Example {
-  umbrella header "Pods-TQIExtract_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}
