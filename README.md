@@ -6,22 +6,57 @@
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey)](https://github.com/vafreitas/ios-mod-extract)
 [![License](https://img.shields.io/badge/license-MIT-blueviolet)](https://github.com/vafreitas/ios-mod-extract)
 
-## Exemplo
+## Introdução
 
-Pra rodar o projeto de exemplo basta clonar o repositório e dentro da pasta Example rodar `pod install` no terminal.
+Este é um repositório publico exemplificando um módulo seguindo a estratégia multi-repositório utilizando o gerenciador de dependências [CocoaPods](https://cocoapods.org/).
+Nele voce irá encontrar uma tela que simula um extrato bancário.
+
+Fizemos as telas de duas formas, utilizando:
+ - Xibs
+ - SwiftUI
+
+Utilizamos o provedor [Apiary](https://apiary.io/), que simula uma api utilizando payloads mockados, abaixo você encontra a documentação da api criada e utilizada neste módulo.
+ - [Documentação da API](https://tqibankapi.docs.apiary.io/#)
+
+## Projeto de Exemplo
+
+Pra rodar o projeto de exemplo basta clonar o repositório e dentro da pasta **Example** rodar `pod install` no terminal.
 
 ## Requerimentos
 
 - Xcode 13.1
 - Swift 5
 
+## CI - Github Actions
+
+Este módulo esta utilizando o CI do [Github Actions](https://github.com/features/actions), caso tenha curiosidade basta acessar a aba **Actions** acima e visualizar o aquivo de configuração. Nele temos configurações de um build completo seguindo da execução dos testes unitários que se encontram no projeto de **Exemplo**.
+
+## Bundler & Fastlane
+
+Utilizamos o [Bundler](https://bundler.io/) para o gerenciamento de ambiente das versões utilizadas do 'cocoapods' e 'fastlane' para execução no CI e em nossa maquina.
+<br>
+<br>
+Este módulo esta integrado com o [Fastlane](https://docs.fastlane.tools/) para execução de build e testes unitários com uma maior facilidade e escalabilidade, 
+Caso tenha curiosidade de como funciona instale o [Bundler](https://bundler.io/) em sua maquina e dentro da pasta do projeto execute:
+
+`bundle install`
+
+Após isto para rodar locamente o build do app pelo **Fastlane** digite em seu terminal:
+
+`bundle exec fastlane test_module`
+
 ## Instalação
 
-Para instalar, simplesmente adicione esta linha ao seu Podfile.
+Para instalar em seu projeto, simplesmente adicione esta linha ao seu **Podfile**.
 
 ```ruby
 pod 'TQIExtract', :git => 'https://github.com/vafreitas/ios-mod-extract.git'
 ```
+
+## Dependências Externas
+
+Estamos utilizando as seguintes dependências externas:
+  - [VFNetwork](https://github.com/vafreitas/VFNetwork) | Protocol oriented network layer
 
 ## Autores
 
