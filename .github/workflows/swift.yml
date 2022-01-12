@@ -1,0 +1,41 @@
+name: Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/cache@v1
+      with:
+       path: Pods
+       key: ${{ runner.os }}-pods-${{ hashFiles('**/Example/Podfile.lock') }}
+       restore-keys: |
+         ${{ runner.os }}-pods-
+      
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@477b21f02be01bcb8030d50f37cfec92bfa615b6
+      with:
+        ruby-version: 3.0.0
+        bundler-cache: true
+      
+    - name: Install dependencies
+      run: | 
+       bundle install
+      
+    - name: Install Pods
+      run: |
+        cd Example
+        bundle exec pod install
+     
+    - name: Run Fastlane 
+      run: bundle exec fastlane test_module
+      env:
+        MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
