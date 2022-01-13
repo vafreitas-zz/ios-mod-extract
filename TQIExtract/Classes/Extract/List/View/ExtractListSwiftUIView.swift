@@ -44,7 +44,7 @@ public struct ExtractListSwiftUIView: View {
             .onAppear { viewModel.getTransactions() }
             .environment(\.colorScheme, isDark == false ? .light : .dark)
             
-            if viewModel.isLoading { LoadingViewSwiftUI() }
+            if viewModel.isLoading { LoadingViewSwiftUI(isDark: isDark) }
         }
     }
 }
