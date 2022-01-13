@@ -13,7 +13,7 @@ Nele voce irá encontrar uma tela que simula um extrato bancário.
 
 Fizemos as telas de duas formas, utilizando:
  - Xibs
- - SwiftUI - com modo claro e escuro 🌓
+ - SwiftUI - com tema claro e escuro 🌓
 
 Utilizamos o provedor [Apiary](https://apiary.io/), que simula uma api utilizando payloads mockados, abaixo você encontra a documentação da api criada e utilizada neste módulo.
  - [Documentação da API](https://tqibankapi.docs.apiary.io/#)
