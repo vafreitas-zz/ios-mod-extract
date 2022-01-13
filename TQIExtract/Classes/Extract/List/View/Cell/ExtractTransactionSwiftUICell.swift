@@ -11,6 +11,8 @@ struct ExtractTransactionRow: View {
     
     // MARK: Properties
     
+    @Environment(\.colorScheme) var colorScheme
+    
     let transaction: ExtractTransaction
     var iconName: String  {
         switch self.transaction.type {
@@ -42,10 +44,10 @@ struct ExtractTransactionRow: View {
             // 05.08.2022 às 15:32
             VStack(alignment: .leading, spacing: 2) {
                 Text(transaction.movementDescription)
-                    .foregroundColor(.init(white: 0.3))
+                    .foregroundColor(colorScheme == .light ? .init(white: 0.3) : .white)
                     .font(.system(size: 18, weight: .semibold))
                 Text(transaction.dateTime)
-                    .foregroundColor(.init(white: 0.6))
+                    .foregroundColor(colorScheme == .light ? .init(white: 0.6) : .init(white: 0.8))
                     .font(.system(size: 13, weight: .medium))
             }
             .padding([.trailing, .leading], 4)

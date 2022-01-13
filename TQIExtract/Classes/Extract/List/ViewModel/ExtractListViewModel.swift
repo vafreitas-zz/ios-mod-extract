@@ -22,7 +22,8 @@ open class ExtractListViewModel {
     }
     
     public func getTransactions(completion: @escaping (Result<ExtractTransactions, Error>) -> Void) {
-        service.getTransactions { result in
+        service.getTransactions { [weak self] result in
+            guard let self = self else { return }
             switch result {
             case let .success(model):
                 self.model = model

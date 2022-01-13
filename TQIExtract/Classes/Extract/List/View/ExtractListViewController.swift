@@ -12,6 +12,7 @@ open class ExtractListViewController: UIViewController {
     // MARK: Outlet
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     
     // MARK: Properties
     
@@ -39,13 +40,19 @@ open class ExtractListViewController: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         title = "Extrato"
-        getTransactions()
         setupRefreshControl()
         setupTableView()
     }
     
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getTransactions()
+    }
+    
+    // MARK: Setup
+    
     func setupRefreshControl() {
-        refreshControl.addTarget(self, action: #selector(getTransactions), for: .valueChanged)
+        refreshControl.addTarget(self, action: #selector(getTransactionsRefresh), for: .valueChanged)
     }
     
     func setupTableView() {
@@ -53,19 +60,31 @@ open class ExtractListViewController: UIViewController {
         tableView.dataSource = self
         tableView.addSubview(refreshControl)
         tableView.register(ExtractTransactionCell.self)
-        tableView.reloadData()
     }
     
-    @objc func getTransactions() {
+    func isLoading(_ loading: Bool) {
+        indicatorView.isHidden = !loading
+        loading ? indicatorView.startAnimating() : indicatorView.stopAnimating()
+    }
+    
+    // MARK: API Methods
+    
+    @objc func getTransactionsRefresh() {
+        getTransactions(showLoading: false)
+    }
+    
+    func getTransactions(showLoading: Bool = true) {
+        isLoading(showLoading)
         viewModel.getTransactions { [weak self] _ in
             guard let self = self else { return }
+            self.isLoading(false)
             self.tableView.reloadData()
             self.refreshControl.endRefreshing()
         }
     }
 }
 
-// MARK: UITableView Delegate
+// MARK: UITableView Delegate & DataSource
 
 extension ExtractListViewController: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -13,6 +13,7 @@ public struct ExtractListSwiftUIView: View {
     // MARK: Properties
     
     @StateObject private var viewModel = ExtractListSwiftUIViewModel()
+    @State private var isDark = false
     
     // MARK: Initializer
     
@@ -31,11 +32,19 @@ public struct ExtractListSwiftUIView: View {
                 }
                 .listStyle(.plain)
                 .navigationTitle("Extrato")
+                .toolbar {
+                    Button {
+                        isDark.toggle()
+                    } label: {
+                        isDark ? Image(systemName: "sun.max") : Image(systemName: "moon.fill")
+                    }
+                }
                 
             }
             .onAppear { viewModel.getTransactions() }
+            .environment(\.colorScheme, isDark == false ? .light : .dark)
             
-            if viewModel.isLoading { LoadingView() }
+            if viewModel.isLoading { LoadingViewSwiftUI() }
         }
     }
 }

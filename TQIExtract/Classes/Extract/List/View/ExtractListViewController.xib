@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExtractListViewController" customModule="TQIExtract" customModuleProvider="target">
             <connections>
+                <outlet property="indicatorView" destination="AWR-dR-YPi" id="u2c-CY-rge"/>
                 <outlet property="tableView" destination="7ol-SI-N1x" id="3Sm-J9-q8a"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="blG-6E-8qe"/>
             </connections>
@@ -23,14 +24,23 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="AWR-dR-YPi">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="NKa-Rl-Q0K"/>
+                        <constraint firstAttribute="width" constant="37" id="rqP-S8-UxR"/>
+                    </constraints>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="AWR-dR-YPi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5ur-R8-Z4q"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7ol-SI-N1x" secondAttribute="trailing" id="Ckz-Qs-iE4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7ol-SI-N1x" secondAttribute="bottom" id="Mdi-k9-p9i"/>
                 <constraint firstItem="7ol-SI-N1x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OOF-00-V9h"/>
                 <constraint firstItem="7ol-SI-N1x" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kAj-BL-pBo"/>
+                <constraint firstItem="AWR-dR-YPi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="zC4-Br-Pmx"/>
             </constraints>
             <point key="canvasLocation" x="120" y="-14"/>
         </view>

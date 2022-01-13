@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoadingView: View {
+struct LoadingViewSwiftUI: View {
     var body: some View {
         ZStack {
             Color(.systemBackground).edgesIgnoringSafeArea(.all)
