@@ -34,4 +34,5 @@ Pod::Spec.new do |s|
   }
   
    s.dependency 'VFNetwork'
+   s.dependency 'TQICoordinator'
 end
