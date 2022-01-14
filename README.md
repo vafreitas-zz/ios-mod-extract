@@ -60,12 +60,12 @@ Estamos utilizando as seguintes dependências externas:
 
 ## Autores
 
-<h5>Victor Freitas | iOS Specialist</h5>
 <img src="https://avatars.githubusercontent.com/u/33930810?s=400&u=de2cb07d58b8c7948bac1654a66bd54e6999a2a1&v=4" style="border: none; border-radius:50%" width="100" height="100">
+<h5>Victor Freitas | iOS Specialist</h5>
 <a href="https://linkedin.com/in/victor-freitas-84bb37124/"><img align="left" alt="Victor | LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<br>
-<h5>Gabriel Borges | iOS Specialist</h5>
+<br><br>
 <img src="https://avatars.githubusercontent.com/u/75991038?v=4" style="border: none; border-radius:50%" width="100" height="100">
+<h5>Gabriel Borges | iOS Specialist</h5>
 <a href="https://www.linkedin.com/in/gabriel-borges-034420100/"><img align="left" alt="Victor | LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <br>
 
