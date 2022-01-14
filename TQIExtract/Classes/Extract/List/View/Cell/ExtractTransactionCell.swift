@@ -44,6 +44,7 @@ class ExtractTransactionCell: UITableViewCell {
         }
         
         iconImageView.image = UIImage(named: iconName)
+        dateTimeLabel.text = model.dateTime
     }
     
     func setValue(_ value: String) {

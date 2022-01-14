@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class ExtractListViewController: UIViewController {
+open class ExtractListViewController: BaseViewController {
 
     // MARK: Outlet
     
@@ -40,6 +40,7 @@ open class ExtractListViewController: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         title = "Extrato"
+        navBarHidden = false
         setupRefreshControl()
         setupTableView()
     }

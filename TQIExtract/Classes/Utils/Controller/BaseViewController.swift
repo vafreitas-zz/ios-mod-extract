@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+open class BaseViewController: UIViewController {
+        
+    // MARK: Properties
+    
+    public var navBarHidden: Bool = false
+    
+    // MARK: Lifecycle
+    
+    override public func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(navBarHidden, animated: true)
+    }
+}
