@@ -18,7 +18,7 @@ open class ExtractCoordinator: Coordinator {
     
     // MARK: Initializer
     
-    init() {
+    public init() {
         viewController = ExtractListViewController(viewModel: .init())
         navigationController = UINavigationController(rootViewController: viewController)
     }
