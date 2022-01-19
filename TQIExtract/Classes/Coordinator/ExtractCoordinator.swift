@@ -11,15 +11,20 @@ open class ExtractCoordinator: Coordinator {
     
     // MARK: Properties
     
-    public var delegate: CoordinatorDelegate?
-    public var childCoordinator: Coordinator?
-    public var viewController: UIViewController!
-    public var navigationController: UINavigationController?
+    public typealias V = ExtractListViewController
+    public var view: ExtractListViewController?
+    public var navigation: UINavigationController?
+    public var presentationType: PresentationType?
     
     // MARK: Initializer
     
     public init() {
-        viewController = ExtractListViewController(viewModel: .init())
-        navigationController = UINavigationController(rootViewController: viewController)
+        view = ExtractListViewController(viewModel: .init())
+    }
+    
+    public func stop() {
+        navigation = nil
+        view = nil
+        presentationType = nil
     }
 }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TQIExtract'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'TqiBank Extract Module'
 
   s.homepage         = 'https://github.com/vafreitas/ios-mod-extract'
