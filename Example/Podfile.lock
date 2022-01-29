@@ -1,6 +1,6 @@
 PODS:
   - TQICoordinator (1.1.0)
-  - TQIExtract (1.0.0):
+  - TQIExtract (1.1.0):
     - TQICoordinator
     - VFNetwork
   - VFNetwork (1.4.1)
@@ -26,9 +26,9 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   TQICoordinator: 43c342be3dc6732aea451ddcde9675de3bebe711
-  TQIExtract: 7ef9a269508460f968cdf1daf53f382ef6864a9d
+  TQIExtract: 666a71230818b837cb08f7cdca893f3cd7fa4ca6
   VFNetwork: 2070046bcd8b7e766affc3d1a4cd7729c3b38880
 
-PODFILE CHECKSUM: 2ed8531e131e9babe272d44a01866995b6560b0a
+PODFILE CHECKSUM: 91e2a23d86209a20e969f36a7946e9e4d89f9cda
 
 COCOAPODS: 1.11.2
