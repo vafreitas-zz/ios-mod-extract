@@ -27,12 +27,6 @@ Pod::Spec.new do |s|
    
   s.public_header_files = 'Pod/Classes/**/*.swift'
   
-  s.info_plist = {
-    'Environment' => 'sandbox',
-    'Protocol' => 'https',
-    'Base_URL' => 'private-1c4f09-diobankapi.apiary-mock.com'
-  }
-  
    s.dependency 'VFNetwork'
    s.dependency 'TQICoordinator'
 end
