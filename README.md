@@ -2,7 +2,7 @@
 # Modulo de Extrato do TQIBank.
 
 [![Build](https://github.com/vafreitas/ios-mod-extract/actions/workflows/swift.yml/badge.svg)](https://github.com/vafreitas/ios-mod-extract/actions/workflows/swift.yml)
-[![Version](https://img.shields.io/badge/pod-v1.0.0-blue)](https://github.com/vafreitas/ios-mod-extract)
+[![Version](https://img.shields.io/badge/pod-v1.1.0-blue)](https://github.com/vafreitas/ios-mod-extract)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey)](https://github.com/vafreitas/ios-mod-extract)
 [![License](https://img.shields.io/badge/license-MIT-blueviolet)](https://github.com/vafreitas/ios-mod-extract)
 
